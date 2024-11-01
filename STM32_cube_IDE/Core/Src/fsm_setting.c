@@ -24,7 +24,7 @@ void fsm_setting()
 {
 	if(getButtonFlagAtIndex(0))
 	{
-		updateTempsForFSMManual();
+		Onepass = 1;
 		current_mode ++;
 		current_mode = current_mode % 4;
 		ResetButtonFlagAtIndex(0);
@@ -34,5 +34,7 @@ void fsm_setting()
 		fsm_automatic();
 
 	else
+	{
 		fsm_manual();
+	}
 }

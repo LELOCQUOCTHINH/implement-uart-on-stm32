@@ -145,6 +145,12 @@ void mode4()
 
 void fsm_manual()
 {
+	if(Onepass)
+	{
+		updateTempsForFSMManual();
+		Onepass = 0;
+	}
+
 	switch (getCurrentMode())
 	{
 		case 1:
@@ -158,7 +164,6 @@ void fsm_manual()
 		case 3:
 			update7SegBufferForEven(tempMode4);
 			mode4();
-			Onepass = 1;
 			break;
 		default:
 			break;

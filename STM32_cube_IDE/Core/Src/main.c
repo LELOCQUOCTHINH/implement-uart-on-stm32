@@ -97,7 +97,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  fsm_setting();
+		fsm_setting();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
