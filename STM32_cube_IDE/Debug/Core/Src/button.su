@@ -1,0 +1,5 @@
+button.c:21:6:init_state_button	16	static
+button.c:36:6:getButtonFlagAtIndex	16	static
+button.c:44:6:ResetButtonFlagAtIndex	16	static
+button.c:52:6:getKeyInput	24	static
+button.c:122:6:UnitTestButton	8	static

@@ -1,0 +1,5 @@
+fsm_manual.c:17:6:updateTempsForFSMManual	4	static
+fsm_manual.c:26:6:mode2	8	static
+fsm_manual.c:65:6:mode3	8	static
+fsm_manual.c:105:6:mode4	8	static
+fsm_manual.c:146:6:fsm_manual	8	static

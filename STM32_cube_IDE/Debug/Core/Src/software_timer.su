@@ -1,0 +1,5 @@
+software_timer.c:18:6:timerRun	4	static
+software_timer.c:28:6:IsOneSecondPassed	4	static
+software_timer.c:33:6:clearOneSecondFlag	4	static
+software_timer.c:38:6:ScanLed7Seg	8	static
+software_timer.c:47:6:timer_isr	8	static
