@@ -19,7 +19,7 @@ int TimeRedDecrease = 0;
 int TimeAmberDecrease = 0;
 int TimeGreenDecrease = 0;
 
-bool Onepass = 0;
+bool Onepass = 0; //one pass indicate that node 0 have been pressed (switch mode on)
 
 void update7SegBufferForOdd(int interval) //odd is index 1 & 3
 {//we will minus for 1 to get index of array

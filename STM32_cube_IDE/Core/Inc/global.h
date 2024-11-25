@@ -12,7 +12,9 @@
 
 #define TICK 10
 
-typedef enum {true, false} bool;
+#define true 1
+#define false 0
+typedef int bool;
 
 void blink_led();
 
