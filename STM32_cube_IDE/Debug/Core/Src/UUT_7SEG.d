@@ -27,7 +27,7 @@ Core/Src/UUT_7SEG.o: ../Core/Src/UUT_7SEG.c ../Core/Inc/UUT_7SEG.h \
  ../Core/Inc/software_timer.h ../Core/Inc/led7_segment.h \
  ../Core/Inc/button.h ../Core/Inc/traffic_light.h \
  ../Core/Inc/fsm_automatic.h ../Core/Inc/fsm_manual.h \
- ../Core/Inc/fsm_setting.h
+ ../Core/Inc/fsm_setting.h ../Core/Inc/Scheduler.h
 
 ../Core/Inc/UUT_7SEG.h:
 
@@ -96,3 +96,5 @@ Core/Src/UUT_7SEG.o: ../Core/Src/UUT_7SEG.c ../Core/Inc/UUT_7SEG.h \
 ../Core/Inc/fsm_manual.h:
 
 ../Core/Inc/fsm_setting.h:
+
+../Core/Inc/Scheduler.h:

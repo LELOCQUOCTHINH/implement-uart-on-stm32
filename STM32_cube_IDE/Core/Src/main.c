@@ -90,14 +90,25 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(& htim2);
-  init_state_button();
+  SCH_Init();
+  SCH_Add_Task(&blink_led, 0, 10);
+  uint32_t temp = SCH_Add_Task(&ScanLed7Seg, 0, 10);
+  uint32_t temp2 = SCH_Add_Task(&timerRun, 0, 10);
+  SCH_Add_Task(&getKeyInput, 0, 10);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		fsm_setting();
+		SCH_Dispatch_Tasks();
+//		if(IsOneSecondPassed() && temp)
+//		{
+//			SCH_Delete_Task(temp);
+//			SCH_Delete_Task(temp2);
+//			temp = 0;
+//			clearOneSecondFlag();
+//		}
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -245,7 +256,7 @@ static void MX_GPIO_Init(void)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	timer_isr();
+	SCH_Update();
 }
 
 /* USER CODE END 4 */

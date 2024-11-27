@@ -1,3 +1,4 @@
+"./Core/Src/Scheduler.o"
 "./Core/Src/UUT_7SEG.o"
 "./Core/Src/button.o"
 "./Core/Src/fsm_automatic.o"

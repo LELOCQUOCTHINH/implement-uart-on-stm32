@@ -18,7 +18,7 @@ void blink_led()
 	if(counter_blinkLed <= 0)
 	{
 		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-		clearOneSecondFlag();
+//		clearOneSecondFlag();
 		counter_blinkLed = TIME_BLINK/TICK;
 	}
 }

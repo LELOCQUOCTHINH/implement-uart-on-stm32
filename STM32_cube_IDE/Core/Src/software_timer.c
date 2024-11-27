@@ -50,6 +50,7 @@ void timer_isr()
 	ScanLed7Seg();
 	timerRun();
 	getKeyInput();
+//	fsm_setting();
 //	UnitTestButton();
 }
 

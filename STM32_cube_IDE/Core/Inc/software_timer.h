@@ -14,7 +14,7 @@ bool IsOneSecondPassed();
 void clearOneSecondFlag();
 void timerRun();
 void setTime();
-
+void ScanLed7Seg();
 void timer_isr();
 
 #endif /* INC_SOFTWARE_TIMER_H_ */
