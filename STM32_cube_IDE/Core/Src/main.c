@@ -90,11 +90,13 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(& htim2);
+  init_state_button();
   SCH_Init();
   SCH_Add_Task(&blink_led, 0, 10);
   uint32_t temp = SCH_Add_Task(&ScanLed7Seg, 0, 10);
   uint32_t temp2 = SCH_Add_Task(&timerRun, 0, 10);
   SCH_Add_Task(&getKeyInput, 0, 10);
+  SCH_Add_Task(&fsm_setting, 0, 10);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,6 +111,7 @@ int main(void)
 //			temp = 0;
 //			clearOneSecondFlag();
 //		}
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
