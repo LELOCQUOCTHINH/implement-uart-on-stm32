@@ -1,4 +1,0 @@
-led7_segment.c:5:6:Set7SegBufferAtIndex	16	static
-led7_segment.c:15:5:GetValueBufferAtIndex	16	static
-led7_segment.c:24:6:update7SEG	16	static
-led7_segment.c:71:6:display7SEG	16	static

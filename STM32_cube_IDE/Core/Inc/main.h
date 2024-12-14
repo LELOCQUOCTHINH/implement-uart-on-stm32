@@ -37,7 +37,9 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+extern UART_HandleTypeDef huart2;
+extern uint8_t temp;
+extern ADC_HandleTypeDef hadc1;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -58,60 +60,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED_RED_1_Pin GPIO_PIN_3
-#define LED_RED_1_GPIO_Port GPIOA
-#define LED_GREEN_1_Pin GPIO_PIN_4
-#define LED_GREEN_1_GPIO_Port GPIOA
 #define LED_RED_Pin GPIO_PIN_5
 #define LED_RED_GPIO_Port GPIOA
-#define LED_YELLOW_1_Pin GPIO_PIN_6
-#define LED_YELLOW_1_GPIO_Port GPIOA
-#define LED_RED_2_Pin GPIO_PIN_7
-#define LED_RED_2_GPIO_Port GPIOA
-#define A_7_SEG_Pin GPIO_PIN_0
-#define A_7_SEG_GPIO_Port GPIOB
-#define B_7_SEG_Pin GPIO_PIN_1
-#define B_7_SEG_GPIO_Port GPIOB
-#define C_7_SEG_Pin GPIO_PIN_2
-#define C_7_SEG_GPIO_Port GPIOB
-#define ANOT_COMMON_4_Pin GPIO_PIN_10
-#define ANOT_COMMON_4_GPIO_Port GPIOB
-#define BUTTON_1_Pin GPIO_PIN_11
-#define BUTTON_1_GPIO_Port GPIOB
-#define BUTTON_2_Pin GPIO_PIN_12
-#define BUTTON_2_GPIO_Port GPIOB
-#define BUTTON_3_Pin GPIO_PIN_13
-#define BUTTON_3_GPIO_Port GPIOB
-#define LED_GREEN_2_Pin GPIO_PIN_8
-#define LED_GREEN_2_GPIO_Port GPIOA
-#define LED_YELLOW_2_Pin GPIO_PIN_9
-#define LED_YELLOW_2_GPIO_Port GPIOA
-#define LED_RED_3_Pin GPIO_PIN_10
-#define LED_RED_3_GPIO_Port GPIOA
-#define LED_GREEN_3_Pin GPIO_PIN_11
-#define LED_GREEN_3_GPIO_Port GPIOA
-#define LED_YELLOW_3_Pin GPIO_PIN_12
-#define LED_YELLOW_3_GPIO_Port GPIOA
-#define LED_RED_4_Pin GPIO_PIN_13
-#define LED_RED_4_GPIO_Port GPIOA
-#define LED_GREEN_4_Pin GPIO_PIN_14
-#define LED_GREEN_4_GPIO_Port GPIOA
-#define LED_YELLOW_4_Pin GPIO_PIN_15
-#define LED_YELLOW_4_GPIO_Port GPIOA
-#define D_7_SEG_Pin GPIO_PIN_3
-#define D_7_SEG_GPIO_Port GPIOB
-#define E_7_SEG_Pin GPIO_PIN_4
-#define E_7_SEG_GPIO_Port GPIOB
-#define F_7_SEG_Pin GPIO_PIN_5
-#define F_7_SEG_GPIO_Port GPIOB
-#define G_7_SEG_Pin GPIO_PIN_6
-#define G_7_SEG_GPIO_Port GPIOB
-#define ANOT_COMMON_1_Pin GPIO_PIN_7
-#define ANOT_COMMON_1_GPIO_Port GPIOB
-#define ANOT_COMMON_2_Pin GPIO_PIN_8
-#define ANOT_COMMON_2_GPIO_Port GPIOB
-#define ANOT_COMMON_3_Pin GPIO_PIN_9
-#define ANOT_COMMON_3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
