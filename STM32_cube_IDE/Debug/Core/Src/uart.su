@@ -1,0 +1,5 @@
+uart.c:44:6:command_parser_fsm	4	static
+uart.c:117:6:uart_communiation_fsm	8	static
+uart.c:137:6:init_uart	16	static
+uart.c:152:6:decrease_time_out	4	static
+uart.c:168:6:blink_led	8	static
